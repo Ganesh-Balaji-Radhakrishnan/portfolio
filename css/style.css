@@ -70,7 +70,8 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background-image: linear-gradient(to right top, #143d12, #2e661b, #509121, #78bd1f, #a8eb12);
+    /*background-image: linear-gradient(to right top, #143d12, #2e661b, #509121, #78bd1f, #a8eb12);*/
+    background-color: #00C575 ;
     color: var(--clr-light);
     border-radius: 5px;
     text-decoration: none;
