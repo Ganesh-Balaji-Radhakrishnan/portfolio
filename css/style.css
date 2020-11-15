@@ -385,7 +385,8 @@ header {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
@@ -399,8 +400,10 @@ header {
 }
 
 .container-link {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
+    text-decoration: none;
+    color: var(--clr-light) ;
 }
 
 .container-img {
