@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Ganesh Balaji R Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!--google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-       
-        <!--css page link-->
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Ganesh Balaji R Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devgb.png" alt="">
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--css page link-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devgb.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#specialities" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#my-portfolio" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--header-->
+
+    <!--Introduction-->
+
+    <section class="intro">
+      <h2 class="section__title section__title--intro">
+        I am, <strong>Ganesh Balaji R</strong>
+      </h2>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img class="intro__img" src="img/gb-main.jpg" alt="" />
+    </section>
+    <!-- /introduction -->
+
+    <!--My Works-->
+
+    <section class="my-works" id="specialities">
+      <h2 class="section__title section__title--myworks">What I do</h2>
+      <div class="works">
+        <div class="work">
+          <!--
+          <h3>Design and Development</h3>
+           <p>
+            A design enthusiast and a self-learnt coder, Has a strong base in
+            HTML5, CSS3, JavaScript and React Js. Has particular affinity
+            towards clean and minimalistic design and inspired by ordinary but
+            powerful things around us.
+          </p> -->
+
+          <div class="container">
+            <div class="panel active">
+              <h3 class="panel_heading">Frontend Development</h3>
+              <p class="panel_para">
+                A design enthusiast and a self-learnt coder, Has a strong base
+                in HTML5, CSS3, JavaScript and React Js. Has particular affinity
+                towards clean and minimalistic design and inspired by ordinary
+                but powerful things around us.
+              </p>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#specialities" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#my-portfolio" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header> <!--header-->
-
-       <!--Introduction-->
-
-       <section class="intro">
-           <h2 class="section__title section__title--intro">
-                I am, <strong>Ganesh Balaji R</strong>
-           </h2>
-           <p class="section__subtitle section__subtitle--intro">
-                front-end dev
-           </p>
-           <img class="intro__img" src="img/gb-main.jpg" alt="">
-       </section> <!-- /introduction -->
-
-        <!--My Works-->
-
-        <section class="my-works" id="specialities">
-            <h2 class="section__title section__title--myworks">What I do</h2>
-            <div class="works">
-                <div class="work">
-                        <h3>Design and Development</h3>
-                        <p>
-                            A design enthusiast and a self-learnt coder, Has a strong base in HTML5, CSS3, JavaScript and React Js. 
-                            Has particular affinity towards clean and minimalistic design 
-                            and inspired by ordinary but powerful things around us.
-
-                        </p>
-                </div>
-                <!-- 
+            <div class="panel">
+              <h3 class="panel_heading">Medical Engineer</h3>
+              <p class="panel_para">
+                Medical Engineer with a specialisation in Biomechanics. Love
+                sports science and Human movements. Has strong background in
+                Human Physiology, Medical Instrumentation and Biophysics. Being
+                a movement science enthusiast, I can't help myself judging when
+                you walk!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 
                     <div class="work">
                         <h3>Biomechanics</h3>
                         <p>
@@ -69,69 +107,79 @@
                         </p>
                 </div>
                 -->
-                
-            </div>
-            <a class="btn" href="#my-portfolio">my work</a>
-        </section><!-- /My Works-->
+      </div>
 
-        <!--About me-->
+      <a class="btn" href="#my-portfolio">my work</a>
+    </section>
+    <!-- /My Works-->
 
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who am I</h2>
-            <p class="section__subtitle section__subtitle--about">Front-end Engineer in Stockholm</p>
+    <!--About me-->
 
-            <div class="about-me__body">
-                <p>
-                    I'm a developer, with an aspiration to create beautiful and effecient websites.  
-                    I would describe myself as self-driven, curious and perseverant. 
-                    I also hold a masters degree in Medical Engineering (Biomechanics).
-                </p>
-                <p>
-                    Apart from coding and creating stuff, I love to play football and cook. I also fancy riding on my bike through the suburbs of Stockholm.
-                </p>
-            </div>
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who am I</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Front-end Engineer in Stockholm
+      </p>
 
-            <img src="img/gb-02.jpg" class="about-me__img" alt="">
+      <div class="about-me__body">
+        <p>
+          I'm a developer, with an aspiration to create beautiful and effecient
+          websites. I would describe myself as self-driven, curious and
+          perseverant. I also hold a masters degree in Medical Engineering
+          (Biomechanics).
+        </p>
+        <p>
+          Apart from coding and creating stuff, I love to play football and
+          cook. I also fancy riding on my bike through the suburbs of Stockholm.
+        </p>
+      </div>
 
-        </section>  <!--/ About me-->
- 
+      <img src="img/gb-02.jpg" class="about-me__img" alt="" />
+    </section>
+    <!--/ About me-->
 
+    <!-- Portfolio-->
 
-       <!-- Portfolio-->
+    <section class="portfolio" id="my-portfolio">
+      <h2 class="section__title section__title--portfolio">My Portfolio</h2>
+      <p class="section__subtitle section__subtitle--portfolio">
+        Samples of my work
+      </p>
 
-       <section class="portfolio" id="my-portfolio">
-           <h2 class="section__title section__title--portfolio">My Portfolio</h2>
-           <p class="section__subtitle section__subtitle--portfolio">Samples of my work</p>
-           
-           <div class="portfolio-container">
-               <!--work 1-->
-                <a class="container-link" href="portfolio-item-1.html">
-                    <img src="img/portfolio-01.jpg" alt="" class="container-img"> 
-                    Videoproducer's portfolio
-                </a>
-                <!--work 2-->
-                <a class="container-link" href="portfolio-item-2.html">
-                    <img src="img/portfolio-02.jpg" alt="" class="container-img">
-                    Model restaurant website
-                </a>
-                <!--work 3-->
-                <a class="container-link" href="portfolio-item-3.html">
-                    <img src="img/pacman .jpg" alt="" class="container-img">
-                    Mini pacman game
-                </a>
+      <div class="portfolio-container">
+        <!--work 1-->
+        <a class="container-link" href="portfolio-item-1.html">
+          <img src="img/portfolio-01.jpg" alt="" class="container-img" />
+          Videoproducer's portfolio
+        </a>
+        <!--work 2-->
+        <a class="container-link" href="portfolio-item-2.html">
+          <img src="img/portfolio-02.jpg" alt="" class="container-img" />
+          Model restaurant website
+        </a>
+        <!--work 3-->
+        <a class="container-link" href="portfolio-item-3.html">
+          <img src="img/pacman .jpg" alt="" class="container-img" />
+          Mini pacman game
+        </a>
 
-                <a class="container-link" href="https://ganesh-balaji-radhakrishnan.github.io/punk-api-beer-app/">
-                    <img src="img/portfolio-04.jpg" alt="" class="container-img">
-                    Beer info website
-                </a>
+        <a
+          class="container-link"
+          href="https://ganesh-balaji-radhakrishnan.github.io/punk-api-beer-app/"
+        >
+          <img src="img/portfolio-04.jpg" alt="" class="container-img" />
+          Beer info website
+        </a>
 
-                <a class="container-link" href="https://ganesh-balaji-radhakrishnan.github.io/doodler/">
-                    <img src="img/portfolio-05.jpg" alt="" class="container-img">
-                    Mini doodler game
-                </a>
+        <a
+          class="container-link"
+          href="https://ganesh-balaji-radhakrishnan.github.io/doodler/"
+        >
+          <img src="img/portfolio-05.jpg" alt="" class="container-img" />
+          Mini doodler game
+        </a>
 
-                
-                <!--                
+        <!--                
                 <a class="container-link" href="#">
                     <img src="img/portfolio-01.jpg" alt="" class="container-img">
                 </a>
@@ -143,39 +191,47 @@
                 <a class="container-link" href="#">
                     <img src="img/portfolio-01.jpg" alt="" class="container-img">
                 </a> -->
+      </div>
+    </section>
+    <!--/ Portfolio-->
 
-                
-           </div>
-       </section> <!--/ Portfolio-->
+    <!--Footer-->
 
-       <!--Footer-->
+    <section class="footer">
+      <a href="mailto:ganesh.krishnan237@gmail.com" class="footer__mail"
+        >ganesh.krishnan237@gmail.com</a
+      >
 
-       <section class="footer">
-           <a href="mailto:ganesh.krishnan237@gmail.com" class="footer__mail">ganesh.krishnan237@gmail.com</a>
-
-           <ul class="footer__social">
-               <li class="footer__item">
-                   <a class="footer__link"  href="https://github.com/Ganesh-Balaji-Radhakrishnan">
-                       <i class="fab fa-github"></i>
-                    </a>
-                </li>
-               <li class="footer__item">
-                   <a class="footer__link"  href="https://www.linkedin.com/in/ganesh-balaji-radhakrishnan-92530a99/">
-                       <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-               <li class="footer__item">
-                   <a class="footer__link"  href="https://twitter.com/Gbrad237">
-                       <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-               <!-- <li class="footer__item">
+      <ul class="footer__social">
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://github.com/Ganesh-Balaji-Radhakrishnan"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://www.linkedin.com/in/ganesh-balaji-radhakrishnan-92530a99/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="https://twitter.com/Gbrad237">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <!-- <li class="footer__item">
                    <a class="footer__link"  href="https://codepen.io/ganesh-balaji-radhakrishnan">
                        <i class="fab fa-codepen"></i>
                     </a>
                 </li> -->
-           </ul>
-       </section> <!-- /Footer-->
+      </ul>
+    </section>
+    <!-- /Footer-->
     <script src="js/index.js"></script>
-    </body>
+  </body>
 </html>
